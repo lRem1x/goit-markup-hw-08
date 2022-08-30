@@ -1,0 +1,132 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__logo {
+    display: inline-block;
+    font-family: Raleway, serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer__icon-social {
+    padding-right: 10px;
+
+}
+
+.footer__team-social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    list-style: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    fill: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: #2196F3;
+            fill: #FFFFFF;
+            transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+
+.container__footer-social {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.join__list {
+    padding: 0;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+}
+
+
+
+.footer__team-social-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Footer address */
+
+.address__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.address__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--white-color);
+    margin-bottom: 9px;
+}
+
+.address__item:last-child {
+    margin-bottom: 0px;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+
+
+
+.join {
+    width: 145px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+}
