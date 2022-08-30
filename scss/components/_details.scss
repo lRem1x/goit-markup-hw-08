@@ -5,7 +5,7 @@
 }
 
 .details__item {
-    margin-right: 30px;
+    width: 100%;
 }
 
 
@@ -15,9 +15,9 @@
 
 .details__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     list-style: none;
-    padding-left: 0;
 
 }
 

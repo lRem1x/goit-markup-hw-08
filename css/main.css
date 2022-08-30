@@ -30,15 +30,17 @@ ul {
 }
 
 .container {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .header {
@@ -236,7 +238,7 @@ img {
 }
 
 .details__item {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .details__item:last-child {
@@ -245,9 +247,9 @@ img {
 
 .details__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
   list-style: none;
-  padding-left: 0;
 }
 
 .details__title {
