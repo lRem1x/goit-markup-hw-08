@@ -36,11 +36,27 @@ ul {
   padding-right: 15px;
   padding-left: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 img {
   display: block;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -48,6 +64,14 @@ img {
   border-bottom: #ECECEC 1px solid;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header__list {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__item {
@@ -70,7 +94,9 @@ img {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__address__address:hover, .header__address__address:focus {
+
+.header__address:hover,
+.header__address:focus {
   color: var(--accent-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -113,13 +139,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .confirmation-input__checkbox {
@@ -127,9 +146,7 @@ img {
   top: 0;
   left: 0;
   pointer-events: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .confirmation__icon {
@@ -143,15 +160,25 @@ img {
   display: flex;
   align-items: baseline;
 }
-.confirmation__icon-input__checkbox:checked + .confirmation__icon__icon {
+
+.confirmation-input__checkbox:checked + .confirmation__icon {
   opacity: 1;
   border: none;
   background-color: #2196f3;
 }
 
+.confirmation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .confirmation__agreement {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #2196F3;
   display: flex;
   padding-left: 3px;
@@ -233,12 +260,34 @@ img {
 
 .details__section {
   background-color: var(--white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .details__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .details__item {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .details__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .details__item:last-child {
@@ -250,16 +299,22 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
+  padding-left: 0px;
 }
 
 .details__title {
-  width: 270px;
+  width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--text-color-black);
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .details__title {
+    text-align: center;
+  }
 }
 
 .details__text {
@@ -279,6 +334,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color-black);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .section__title {
+    text-align: center;
+  }
 }
 
 .footer {
@@ -469,7 +529,6 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 4px;
 }
 
 .form__field-label {
@@ -481,6 +540,7 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
+  margin-bottom: 4px;
 }
 
 .form__field-input {
@@ -497,9 +557,10 @@ img {
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 10px;
 }
-.form__field-input:hover, .form__field-input:focus {
+
+.form__field-input:hover,
+.form__field-input:focus {
   color: #2196F3;
   border: 1px solid #2196F3;
   border-radius: 4px;
@@ -559,7 +620,9 @@ img {
   border: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field__button:focus, .form-field__button:active {
+
+.form-field__button:focus,
+.form-field__button:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -568,6 +631,14 @@ img {
   border-bottom: #ECECEC 1px solid;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header__list {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__item {
@@ -590,7 +661,9 @@ img {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__address__address:hover, .header__address__address:focus {
+
+.header__address:hover,
+.header__address:focus {
   color: var(--accent-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -813,7 +886,9 @@ img {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover, .link:focus {
+
+.link:hover,
+.link:focus {
   color: var(--accent-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -824,6 +899,7 @@ img {
   bottom: 0;
   position: relative;
 }
+
 .link.current:after {
   display: block;
   position: absolute;
@@ -1020,18 +1096,30 @@ img {
   text-align: center;
 }
 
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding-left: 0px;
+}
+
 .team__item {
+  width: 100%;
   margin-left: 0;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team__list {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__title {
