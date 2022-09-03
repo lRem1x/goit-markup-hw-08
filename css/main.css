@@ -188,6 +188,21 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  .section__clients {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__clients {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__clients {
+    width: 1200px;
+  }
+}
 
 .section__title-clients {
   color: #212121;
@@ -208,12 +223,18 @@ img {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: calc((100% - 90px) / 6);
+  }
+}
 
 .client__list {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  margin-left: -30px;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .clients {
@@ -249,6 +270,21 @@ img {
   padding-right: 15px;
   padding-left: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container__clients {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__clients {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__clients {
+    width: 1200px;
+  }
+}
 
 .section__title-clients {
   font-weight: 700;
@@ -256,6 +292,17 @@ img {
   line-height: 1.16;
   text-align: center;
   padding-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .section__title-clients {
+    width: 480px;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__title-clients {
+    width: calc((100% - 15px) / 3);
+  }
 }
 
 .details__section {
@@ -677,6 +724,21 @@ img {
   height: 600px;
   width: 1600px;
 }
+@media screen and (min-width: 480px) {
+  .hero__section {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    width: 1200px;
+  }
+}
 
 .hero__title {
   color: var(--white-color);
@@ -686,6 +748,22 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 480px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 1200px;
+  }
 }
 
 .hero__btn {
@@ -701,6 +779,7 @@ img {
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
+  cursor: pointer;
 }
 .hero__btn__btn:hover, .hero__btn__btn:focus {
   background-color: #188ce8;
