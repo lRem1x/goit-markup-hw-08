@@ -22,7 +22,6 @@ ul {
 }
 
 .container {
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -49,4 +48,10 @@ img {
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
