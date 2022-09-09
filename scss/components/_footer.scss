@@ -1,7 +1,17 @@
 .footer {
-    background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background-color: #2F303A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: center;
+       @media screen and (min-width:1200px){
+         text-align: left;
+       }
 }
 
 .footer__logo {
@@ -53,16 +63,48 @@
 }
 
 .footer__flex {
-    display: flex;
-    align-items: baseline;
-}
+    // display: flex;
+    @media screen and (max-width:1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        column-gap: 165px;
+     }
+    @media screen and (min-width:1200px){
+       display: flex;
+       flex-wrap: nowrap;
+       align-items: baseline;
+       justify-content: center;
+    }
+  }
+
+  .footer--main {
+   
+    text-align: center;
+    margin-bottom: 60px;
+    
+        @media screen and (min-width:1200px){
+          text-align: left;
+        }
+ 
+ }
 
 .join__list {
-    padding: 0;
-    list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    // margin-left: 70px;
+    // margin-top: 12px;
+    align-items: center;
+    margin-bottom: 60px;
+    @media screen and (min-width:768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width:1200px){
+      margin-left: 70px;
+      align-items: flex-start;
+    }
+    
 }
 
 

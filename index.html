@@ -130,12 +130,15 @@
                         </li>
 
                         <li class="work__item">
-                        <img src="./images/phone.jpg" alt="создание приложений" width="370" /></a>
+                        <img
+                         src="./images/phone.jpg" alt="создание приложений" width="370" /></a>
                         <p class="work__text">Мобильные приложения</p>    
                         </li>
 
                         <li class="work__item">
-                        <img src="./images/tablet.jpg" alt="оформление" width="370" /></a>
+                        <img
+                       
+                         src="./images/tablet.jpg" alt="оформление" width="370" /></a>
                         <p class="work__text">Дизайнерские решения</p>    
                         </li>
                     </ul>
@@ -147,6 +150,26 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
+                           <picture>
+                            <source 
+                            srcset="./images/productdesigner-desk-1x.jpg 1x,
+                                    ./images/productdesigner-desk-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/productdesigner-tablet-1x.jpg 1x,
+                                    ./images/productdesigner-tablet-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/productdesigner-mob-1x.jpg 1x,
+                                    ./images/productdesigner-mob-2x.jpg 2x"
+                                    media="(max-width:767px)"
+                                    />
+
+                           </picture>
                             <img src="./images/productdesigner.jpg" alt="productdesigner" width="270" />
                             <div class="team__container">
                             <h3 class="team__title">Игорь Демьяненко</h3>
@@ -184,7 +207,28 @@
                             </ul>
                         </div>
                         <li class="team__item">
-                            <img src="./images/frontenddeveloper.jpg" alt="frontenddeveloper" width="270" />
+                            <picture>
+                            <source 
+                            srcset="./images/frontenddeveloper-desk-1x.jpg 1x,
+                                    ./images/frontenddeveloper-desk-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/frontenddeveloper-tablet-1x.jpg 1x,
+                                    ./images/frontenddeveloper-tablet-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/frontenddeveloper-mob-1x.jpg 1x,
+                                    ./images/frontenddeveloper-mob-2x.jpg 2x"
+                                    media="(max-width:767px)"
+                                    />
+
+                           </picture>
+                            <img
+                            src="./images/frontenddeveloper.jpg" alt="frontenddeveloper" width="270" />
                             <div class="team__container">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -221,7 +265,29 @@
                             </div>
                         
                         <li class="team__item">
-                            <img src="./images/marketing.jpg" alt="marketing" width="270" />
+                            <picture>
+                            <source 
+                            srcset="./images/marketing-desk-1x.jpg 1x,
+                                    ./images/marketing-desk-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/marketing-tablet-1x.jpg 1x,
+                                    ./images/marketing-tablet-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/marketing-mob-1x.jpg 1x,
+                                    ./images/marketing-mob-2x.jpg 2x"
+                                    media="(max-width:767px)"
+                                    />
+
+                           </picture>
+
+                            <img
+                             src="./images/marketing.jpg" alt="marketing" width="270" />
                             <div class="team__container">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -257,7 +323,31 @@
                                 </ul>
                             
                         <li class="team__item">
-                            <img src="./images/uidesigner.jpg" alt="uidesigner" width="270" />
+
+                            <picture>
+                            <source 
+                            srcset="./images/uidesigner-desk-1x.jpg 1x,
+                                    ./images/uidesigner-desk-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/uidesigner-tablet-1x.jpg 1x,
+                                    ./images/uidesigner-tablet-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    />
+
+                                    <source 
+                            srcset="./images/uidesigner-mob-1x.jpg 1x,
+                                    ./images/uidesigner-mob-2x.jpg 2x"
+                                    media="(max-width:767px)"
+                                    />
+
+                           </picture>
+
+
+                            <img
+                             src="./images/uidesigner.jpg" alt="uidesigner" width="270" />
                             <div class="team__container">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -295,7 +385,7 @@
                     
             </section>
            <section class="section__clients">
-            <div class="container">
+            <div class="container__clients">
             <h2 class="section__title-clients">Постійні клієнти</h2>
             <ul class="client__list">
             <li class="client__item">
@@ -347,7 +437,7 @@
         <!--footer-->
          <footer class="footer">
             <div class="container footer__flex">
-            <div>
+            <div class="footer--main">
                 <a href="/" class="footer__logo"><span class="logo__accent">Web</span>Studio</a>
                 <address class="address">
                     <ul class="address__list">
@@ -395,7 +485,7 @@
                     </li>
                     </ul>
             </div>
-            <div class="footer-form">
+            <div class="footer--form">
                 <form>
                     <label class="footer__form-label" for="e-mail">Подпишитесь на рассылку</label>
                     <div class="footer__form-submit">

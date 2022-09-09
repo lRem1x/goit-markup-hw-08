@@ -1,13 +1,43 @@
 .overlay {
     max-width: 1600px;
-    height: 600px;
+    background-image: var(--bg-gradient), url(../images/hero-bg-mobile.jpg);
+   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2F303A;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/people-working.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: var(--bg-gradient), url(../images/hero-bg-2x-mob.jpg);
+
+    @media screen and (min-width: 768px) {
+       background-image: var(--bg-gradient), url(../images/hero-bg-tablet.jpg); 
+       @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: var(--bg-gradient), url(../images/hero-bg-2x-tablet.jpg);
+       
+  } 
+    }
+
+    @media  screen and (min-width: 1200px) {
+      width: 1600px;
+      height: 600px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+           background-image: var(--bg-gradient), url(../images/people-working.jpg);
+           @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: var(--bg-gradient), url(../images/hero-bg-2x-desktop.jpg); 
+        
+    }
+}
+  }
 }
