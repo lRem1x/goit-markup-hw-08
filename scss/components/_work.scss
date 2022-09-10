@@ -1,7 +1,11 @@
 .work__section {
-    background-color: var(--white-color);
-    padding-bottom: 94px;
-
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    @media screen and (max-width:1200px) {
+        display: none;
+        
+    }
 }
 
 .work__list {
