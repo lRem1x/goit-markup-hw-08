@@ -214,6 +214,12 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 1200px) {
+  .section__clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__title-clients {
   margin-bottom: 30px;
@@ -584,6 +590,12 @@ a {
   }
 }
 
+.footer-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-field {
   margin-bottom: 20px;
 }
@@ -801,21 +813,6 @@ a {
   text-align: center;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
-  .hero__section {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__section {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__section {
-    width: 1600px;
-  }
-}
 
 .hero__title {
   font-family: "Roboto";
@@ -839,6 +836,7 @@ a {
     margin-bottom: 30px;
   }
 }
+
 .hero__btn {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -1308,7 +1306,6 @@ a {
 }
 
 .overlay {
-  height: 400px;
   background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
   background-position: center;
   background-size: cover;
@@ -1316,34 +1313,30 @@ a {
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .overlay {
-    background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .overlay {
     background-image: var(--bg-gradient), url(../images/hero-bg-tablet.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 768px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: var(--bg-gradient), url(../images/hero-bg-tablet-2x.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .overlay {
-    width: 1600px;
-    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2F303A;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    height: 600px;
     background-image: var(--bg-gradient), url(../images/hero-bg-desk.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2F303A;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1362,6 +1355,14 @@ a {
   margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .btn-list {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 }
 @media screen and (min-width: 768px) {
   .btn-list {
@@ -1573,6 +1574,7 @@ a {
 
 .team__social-items {
   display: flex;
+  justify-content: center;
 }
 
 .team__social-item:not(:last-child) {
@@ -1584,8 +1586,6 @@ a {
   display: flex;
   margin-left: 0px;
   padding: 0px;
-  width: 100%;
-  height: 100%;
 }
 
 .team__social-link {
