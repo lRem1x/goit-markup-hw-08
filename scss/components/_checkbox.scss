@@ -1,5 +1,4 @@
 .confirmation {
-    padding-left: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +9,24 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color-gray);
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        color: var(--text-color-gray);
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--text-color-gray);
+        
+    }
 
 
 }
@@ -43,8 +60,12 @@
 }
 .confirmation__agreement {
     text-decoration-line: underline;
-    color: #2196F3;
+    color: var(--accent-color);
     display: flex;
-    padding-left: 3px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */   
+    letter-spacing: 0.03em;
 
 }

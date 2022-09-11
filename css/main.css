@@ -67,6 +67,10 @@ ul, ol {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: var(--white-color);
   border-bottom: #ECECEC 1px solid;
@@ -139,7 +143,6 @@ ul, ol {
 }
 
 .confirmation {
-  padding-left: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,6 +153,24 @@ ul, ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color-gray);
+}
+@media screen and (min-width: 768px) {
+  .confirmation {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: var(--text-color-gray);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .confirmation {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--text-color-gray);
+  }
 }
 
 .confirmation-input__checkbox {
@@ -180,9 +201,13 @@ ul, ol {
 
 .confirmation__agreement {
   text-decoration-line: underline;
-  color: #2196F3;
+  color: var(--accent-color);
   display: flex;
-  padding-left: 3px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
 }
 
 .section__clients {
@@ -411,8 +436,8 @@ ul, ol {
   margin-bottom: 20px;
 }
 
-.footer__icon-social {
-  padding-right: 10px;
+.footer__icon-social:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer__team-social {
@@ -458,7 +483,7 @@ ul, ol {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -559,6 +584,10 @@ ul, ol {
   }
 }
 
+.form-field {
+  margin-bottom: 20px;
+}
+
 .footer__form-label {
   display: block;
   margin-bottom: 20px;
@@ -602,11 +631,10 @@ ul, ol {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
+  color: var(--white-color);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer__form-button {
@@ -624,13 +652,14 @@ ul, ol {
   position: relative;
   left: 0;
   top: 0;
+  margin-bottom: 10px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text-color-gray);
 }
 
 .form__field-label {
@@ -676,7 +705,6 @@ ul, ol {
 
 .form__field-inner {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .form__field-icon {
@@ -695,7 +723,6 @@ ul, ol {
 .form__field-texarea {
   resize: none;
   padding: 12px 16px;
-  margin-bottom: 20px;
   height: 120px;
 }
 
@@ -1081,7 +1108,7 @@ ul, ol {
 }
 @media screen and (min-width: 1200px) {
   .menu-container {
-    gap: 300px;
+    gap: 30px;
   }
 }
 
@@ -1099,7 +1126,7 @@ ul, ol {
   .site-navigation {
     flex-direction: row;
     gap: 50px;
-    margin-left: 88px;
+    margin-left: 0;
     margin-bottom: 0;
   }
 }
@@ -1168,6 +1195,7 @@ ul, ol {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1180,7 +1208,7 @@ ul, ol {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-navigation__item {
-    margin-left: 90px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1213,6 +1241,7 @@ ul, ol {
     padding: 5px 0px;
     font-size: 12px;
     line-height: 1.14;
+    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1302,17 +1331,14 @@ ul, ol {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .overlay {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people-working.jpg);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    background-image: var(--bg-gradient), url(../images/people-working.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: var(--bg-gradient), url(../images/hero-bg-2x-desktop.jpg);
+    background-size: cover;
   }
 }
 
@@ -1361,10 +1387,6 @@ ul, ol {
   border-radius: 4px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-item {
-  margin-bottom: 15px;
 }
 
 /* Portfolio plates */
@@ -1426,7 +1448,7 @@ ul, ol {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
-  margin-bottom: 4px;
+  margin-top: 4px;
   list-style: none;
 }
 
@@ -1458,7 +1480,8 @@ ul, ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio-overlay {
+.portfolio__item:hover .portfolio-overlay,
+.portfolio__item:focus .portfolio-overlay {
   transform: translateY(0);
 }
 
@@ -1596,7 +1619,6 @@ ul, ol {
   list-style: none;
   display: flex;
   padding-left: 0;
-  margin-right: 30px;
 }
 
 .work__item {

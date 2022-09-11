@@ -26,7 +26,7 @@
                 aria-expanded="false"
                 aria-controls="menu-container">
                 <svg class="open-burger" width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="mobile-button__icon-open" href="./images/symbol-defs.svg#icon-menu_24px"></use>
+                <use class="mobile-button__icon-open" href="./images/symbol-defs.svg#icon-menu_40px"></use>
                 </svg>
       
                 <svg class="close-burger" width="20" height="20" aria-label="Переключатель мобильного меню">
@@ -37,11 +37,13 @@
                 <div class="menu-container" data-menu id="menu-container">
                     <ul  class="site-navigation">
                         <li class="site-navigation__item ">
-                            <div class="current-session">
-                                <a class="site-navigation__link current-session--link" href="./index.html">Студия</a>
-                            </div>    
+                                <a class="site-navigation__link" href="./index.html">Студия</a>   
                         </li>
-                        <li class="site-navigation__item"><a class="site-navigation__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="site-navigation__item">
+                            <div class="current-session">
+                            <a class="site-navigation__link current-session--link" href="./portfolio.html">Портфолио</a>
+                        </div>
+                    </li>
                         <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
                     </ul>
                     <ul class="auth-navigation">
@@ -83,7 +85,7 @@
 
         <section class="portfolio-section">
             <div class="container">
-                <h1 hidden="title-hidden">Портфолио</h1>
+                <h1 hidden="visually-hidden">Портфолио</h1>
                 <ul class="btn-list">
                     <li class="btn-item">
                         <button type="button" class="portfolio-button">Все</button>
@@ -100,8 +102,7 @@
                         <button type="button" class="portfolio-button">Маркетинг</button>
                     </li>
                 </ul>
-                </div>
-                <div class="container">
+                
                 <ul class="portfolio__list">
                     <li class="portfolio__item"> 
                         <a class="portfolio__link" href="#">

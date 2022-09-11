@@ -48,9 +48,8 @@
 
 }
 
-.btn-item {
-    margin-bottom: 15px;
-}
+// .btn-item {
+// }
 
 
 
@@ -116,7 +115,7 @@
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
-    margin-bottom: 4px;
+    margin-top: 4px;
     list-style: none;
 
 }
@@ -154,7 +153,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio-overlay {
+.portfolio__item:hover .portfolio-overlay,
+.portfolio__item:focus .portfolio-overlay{
     transform: translateY(0);
 
 }

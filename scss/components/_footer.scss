@@ -25,9 +25,10 @@
     margin-bottom: 20px;
 }
 
-.footer__icon-social {
-    padding-right: 10px;
 
+
+.footer__icon-social:not(:last-child) {
+    margin-right: 10px;
 }
 
 .footer__team-social {
@@ -75,7 +76,7 @@
        display: flex;
        flex-wrap: nowrap;
        align-items: baseline;
-       justify-content: center;
+       justify-content: space-between;
     }
   }
 
@@ -93,8 +94,6 @@
 .join__list {
     display: flex;
     flex-direction: column;
-    // margin-left: 70px;
-    // margin-top: 12px;
     align-items: center;
     margin-bottom: 60px;
     @media screen and (min-width:768px) {
