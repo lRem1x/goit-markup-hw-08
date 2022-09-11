@@ -35,7 +35,7 @@ color: #FFFFFF;
 @media screen and (max-width: 1199px) {
         font-size: 26px;
         line-height: 1.61;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
         
     }
 
@@ -49,26 +49,26 @@ color: #FFFFFF;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--accent-color);
+    color: var(--white-color);
     border-radius: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
     cursor: pointer;
-    margin-bottom: 118px;
 
-        &__btn:hover,
-        &__btn:focus {
-            background-color: #188ce8;
-            color: #ffffff;
+}
+
+ .hero__btn:hover,
+.hero__btnn:focus {
+            background-color: var(--bg-color-button);
+            color: var(--white-color);
             cursor: pointer;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
             transition: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
-}
 
 

@@ -8,7 +8,8 @@
   --grid-column-gap: 30px;
   --bg-gradient: linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)) ;
+          rgba(47, 48, 58, 0.4));
+  --bg-color-button: #188CE8;
 }
 
 body {
@@ -368,6 +369,19 @@ ul, ol {
   .section__title {
     text-align: center;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .footer {
@@ -794,7 +808,7 @@ ul, ol {
   .hero__title {
     font-size: 26px;
     line-height: 1.61;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 .hero__btn {
@@ -803,19 +817,20 @@ ul, ol {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--white-color);
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
   cursor: pointer;
-  margin-bottom: 118px;
 }
-.hero__btn__btn:hover, .hero__btn__btn:focus {
-  background-color: #188ce8;
-  color: #ffffff;
+
+.hero__btn:hover,
+.hero__btnn:focus {
+  background-color: var(--bg-color-button);
+  color: var(--white-color);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1001,6 +1016,10 @@ ul, ol {
 }
 
 .mobile-button:hover .mobile-button__icon-open {
+  fill: #2196F3;
+}
+
+.mobile-button:focus .mobile-button__icon-open {
   fill: #2196F3;
 }
 
@@ -1480,9 +1499,9 @@ ul, ol {
 }
 
 .team__item {
-  width: 100%;
+  width: auto;
   margin-left: 0;
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -1514,14 +1533,11 @@ ul, ol {
 }
 
 .team__container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .team__social-items {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .team__social-item:not(:last-child) {

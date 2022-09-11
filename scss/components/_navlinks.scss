@@ -33,6 +33,10 @@
  .mobile-button:hover .mobile-button__icon-open{
     fill: #2196F3;
  }
+
+ .mobile-button:focus .mobile-button__icon-open{
+    fill: #2196F3;
+ }
  .mobile-button:hover .mobile-button__icon-close{
     fill: #2196F3;
  }
