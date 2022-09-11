@@ -1,22 +1,18 @@
 .hero__section {
     background-color: #2F303A;
     text-align: center;
-    padding-top: 118px;
    
 
     @media  screen and (min-width: 480px) {
         width: 480px;
-
-        
     }
 
     @media screen and (min-width: 768px) {
         width: 768px;
-        
     }
 
       @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1600px;
         
     }
 }
@@ -34,6 +30,7 @@ color: #FFFFFF;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
+max-width: 700px;
 
 @media screen and (max-width: 1199px) {
         font-size: 26px;
@@ -43,7 +40,6 @@ margin-bottom: 30px;
     }
 
       @media screen and (min-width: 1200px) {
-        width: 700px;
     }
 }
 
