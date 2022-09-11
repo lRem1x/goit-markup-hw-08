@@ -14,7 +14,6 @@
 .footer-form__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .form-field {
@@ -31,7 +30,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .footer__form-input {
@@ -39,7 +38,7 @@
     height: 50px;
     margin-bottom: 20px;
     padding-left: 16px;
-    color: #fff;
+    color: var(--white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -74,7 +73,7 @@
 }
 
 .footer__form-icon {
-    fill: #fff;
+    fill: var(--white-color);
     margin-left: 10px;
     vertical-align: middle;
 }
@@ -106,7 +105,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--text-color-gray);
     margin-bottom: 4px;
     
 
@@ -122,7 +121,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--text-color-gray);
     width: 100%;
     padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -134,7 +133,7 @@
 
     .form__field-input:hover,
     .form__field-input:focus {
-    color: #2196F3;
+    color: var(--accent-color);
     border: 1px solid #2196F3;
     border-radius: 4px;
     }
@@ -143,7 +142,7 @@
 .form__field-input:hover+.form__field-icon,
 .form__field-input:focus+.form__field-icon,
 .form__field-input:active+.form__field-icon {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .form__field-inner {
@@ -185,9 +184,9 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
     cursor: pointer;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;

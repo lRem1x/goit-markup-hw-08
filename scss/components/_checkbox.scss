@@ -55,7 +55,7 @@
 .confirmation-input__checkbox:checked+.confirmation__icon {
     opacity: 1;
     border: none;
-    background-color: #2196f3;
+    background-color: var(--accent-color);
 
 }
 .confirmation__agreement {

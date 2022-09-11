@@ -92,8 +92,8 @@
 
     &:hover,
     &:focus {
-        background-color: #2196F3;
-        fill: #FFFFFF;
+        background-color: var(--accent-color);
+        fill: var(--white-color);
         transition: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }

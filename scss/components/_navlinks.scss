@@ -31,14 +31,14 @@
   
  }
  .mobile-button:hover .mobile-button__icon-open{
-    fill: #2196F3;
+    fill: var(--accent-color);
  }
 
  .mobile-button:focus .mobile-button__icon-open{
-    fill: #2196F3;
+    fill: var(--accent-color);
  }
  .mobile-button:hover .mobile-button__icon-close{
-    fill: #2196F3;
+    fill: var(--accent-color);
  }
   .mobile-button__icon-close {
      display: none;
@@ -63,7 +63,7 @@
 
  .menu-container{
    
-    background-color:#fff ;
+    background-color:var(--white-color) ;
     padding: 48px 40px;
     text-align: center;
     
@@ -142,12 +142,12 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         
-        color: #212121;
+        color: var(-text-color-black);
         transition: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-            color: #2196F3;
+            color: #2196f3;
         transition: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -168,7 +168,7 @@
     width: 100%;
     height: 4px;
 
-    background: #2196F3;
+    background: var(--accent-color);
     border-radius: 2px;
     @media screen and (max-width:768px){
       display: none;
@@ -176,7 +176,7 @@
 
 }
 .current-session--link {
-    color:#2196F3
+    color:var(--accent-color);
 }
 
 
@@ -244,13 +244,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        color: #2196F3;
+        color: var(--accent-color);
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .contact-icon,
     &:focus .contact-icon{
-        fill: #2196F3;
+        fill: var(--accent-color);
         transition: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -259,7 +259,7 @@
 
  .auth-navigation-link__phone {
      @media screen and (max-width:768px){
-      color: #2196F3;
+      color: var(--accent-color);
      } 
    }
 .contact-icon{
@@ -306,7 +306,7 @@
 .mobile-list__link{
        padding-right: 10px;
        text-decoration: none;
-       color:#2196F3;
+       color:var(--accent-color);
        font-size: 18px; 
     }
  
