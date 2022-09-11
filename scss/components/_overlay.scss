@@ -1,5 +1,5 @@
 .overlay {
-  height: 600px;
+  height: 400px;
     background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
    background-position: center;
     background-size: cover;
@@ -20,7 +20,7 @@
        @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: var(--bg-gradient), url(../images/hero-bg-2x-tablet.jpg);
+    background-image: var(--bg-gradient), url(../images/hero-bg-tablet-2x.jpg);
        
   } 
     }
