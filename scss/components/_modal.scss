@@ -16,6 +16,9 @@
         }
 }
 
+.modal__close {
+    padding: 40px
+}
 
 .modal__close-button {
     position: absolute;
@@ -40,24 +43,25 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-
-
-
-
-.modal__inner {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-}
-
 .modal__title {
     margin-bottom: 12px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color-black);
+
+    @media screen and (min-width:1200px) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+    }
 }

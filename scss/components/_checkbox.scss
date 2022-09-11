@@ -3,6 +3,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color-gray);
+
+
 }
 
 .confirmation-input__checkbox {
@@ -32,20 +41,6 @@
     background-color: #2196f3;
 
 }
-
-
-.confirmation {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-
-
-}
-
 .confirmation__agreement {
     text-decoration-line: underline;
     color: #2196F3;
