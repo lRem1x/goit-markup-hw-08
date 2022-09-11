@@ -20,9 +20,29 @@ margin-bottom: 30px;
 max-width: 700px;
 
 @media screen and (max-width: 1199px) {
-        font-size: 26px;
-        line-height: 1.61;
-        margin-bottom: 30px;
+    width: 360px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    /* or 162% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 30px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white-color);
         
     }
 }
@@ -44,7 +64,7 @@ max-width: 700px;
 }
 
 
- .hero__btn:hover,
+.hero__btn:hover,
 .hero__btnn:focus {
             background-color: var(--bg-color-button);
             color: var(--white-color);

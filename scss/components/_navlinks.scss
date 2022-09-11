@@ -212,6 +212,7 @@
     &:first-child {margin-right: 32px;}
        }
    }
+
    .auth-navigation__link {
     display: flex;
     padding-top: 16px;
@@ -255,6 +256,12 @@
     }
         
 }
+
+ .auth-navigation-link__phone {
+     @media screen and (max-width:768px){
+      color: #2196F3;
+     } 
+   }
 .contact-icon{
     display: flex;
     // align-items: center;
