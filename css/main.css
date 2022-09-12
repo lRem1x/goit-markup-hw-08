@@ -128,7 +128,7 @@ a {
   color: var(--accent-color);
 }
 
-.backdrop .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -663,6 +663,12 @@ a {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__form-submit {
+    width: 450px;
+  }
+}
+
 .form__field {
   position: relative;
   left: 0;
@@ -983,6 +989,7 @@ a {
   font-size: 12px;
   line-height: 14px;
   width: 450px;
+  z-index: 2;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -1070,7 +1077,7 @@ a {
   padding: 0;
   border: none;
   cursor: pointer;
-  z-index: 500;
+  z-index: 990;
 }
 @media screen and (min-width: 768px) {
   .mobile-button {
@@ -1116,6 +1123,7 @@ a {
   background-color: var(--white-color);
   padding: 48px 40px;
   text-align: center;
+  z-index: 0;
 }
 @media screen and (max-width: 767px) {
   .menu-container {

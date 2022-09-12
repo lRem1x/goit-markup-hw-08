@@ -17,7 +17,7 @@
     padding: 0;
     border: none;
     cursor: pointer;
-    z-index:500;
+    z-index:990;
     
  
    @media  screen and (min-width:768px) {
@@ -67,6 +67,7 @@
     background-color:var(--white-color) ;
     padding: 48px 40px;
     text-align: center;
+    z-index: 0;
     
     
  
