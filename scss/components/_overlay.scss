@@ -40,6 +40,7 @@
   }
 
     @media screen and (min-width: 1200px) {
+      max-width: 1600px;
     height: 600px;
     background-image: var(--bg-gradient), url(../images/hero-bg-desk-1x.jpg);
     background-position: center;

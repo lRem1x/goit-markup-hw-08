@@ -4,9 +4,10 @@
     justify-content: center;
     min-height: 60px;
     @media screen and (max-width:768px){
-      &{justify-content: space-between;}
+
+      justify-content: space-between;
    }
-}
+   }
 
 
 .mobile-button{
@@ -16,7 +17,7 @@
     padding: 0;
     border: none;
     cursor: pointer;
-    z-index: 990;
+    z-index:500;
     
  
    @media  screen and (min-width:768px) {
@@ -89,8 +90,9 @@
  
  @media screen and (min-width:768px){
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
    
     // gap: 84px;
     padding: 0;
